@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        // Get the saved theme from localStorage.
+        const savedTheme = localStorage.getItem("theme");
+      
+        // Apply the saved theme (if any).
+        if (savedTheme) {
+          document.body.classList.add(savedTheme);
+        }
+      });</script>
 
 <head>
     <meta charset="UTF-8">
@@ -72,6 +81,7 @@
             </div>
         </main>
     </div>
+    
     <script src="script.js"></script>
 </body>
 

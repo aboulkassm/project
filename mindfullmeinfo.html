@@ -2,64 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MindfulMe App</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    .project-info {
-      padding: 1em;
-      margin: 1em;
-      font-size: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulMe App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .container1 {
+            max-width: 90%;
+            
+        }
+        .header2 {
+            text-align: center;
+            padding: 5px ;
+            word-wrap: break-word;
+        }
 
-    .project-info ul {
-      list-style: none;
-      padding-left: 20px;
-    }
+        .project-info {
+            padding: 1em;
+            margin: 1em;
+            font-size: 20px;
+        }
 
-    .project-info li {
-      position: relative;
-      padding-left: 15px;
-      margin-bottom: 0.5em;
-    }
+        .project-info ul {
+            list-style: none;
+            padding-left: 20px;
+            padding: 0 1em;
+            text-align: left;
+        }
 
-    .project-info li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-    }
-  </style>
+        .project-info li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 0.5em;
+            font-size: 1.2rem;
+        }
+
+        .project-info li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .project-info li {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header style="text-align: center; padding: 20px;">
-    <h1 style="font-size: 28px; padding: 1em;">MindfulMe App</h1>
-  </header>
-
-  <main>
-    <section>
-      <div class="project-info">
-        <h2 style="padding: 1em;">About the  App</h2>
-        <ul>
-          <li>Collaborated with a university group to develop an Android app for effective well-being.</li>
-          <li>Utilized Java programming language and a SQL database for data collection and storage.</li>
-          <li>Features included user input for well-being metrics like mood, energy levels, and sleep quality.</li>
-          <li>Provided personalized exercise suggestions and mindfulness techniques based on user data.</li>
-          <li>Integrated concentration measurement using device sensors to assess focus levels during tasks.</li>
-          <li>Displayed visually appealing charts and statistics to track progress and identify patterns.</li>
-          <li>Ensured privacy and secure handling of personal data.</li>
-          <li>Leveraged Git version control and GitHub for seamless collaboration within the university group.</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    <div class="container1" >
+        <header class="header2" style=" min-height: 10vh;">
+            <h1 style="font-size: 28px; padding: 0.5em 1em;">MindfulMe App</h1> <!-- Reduced padding here -->
+        </header>
+        <main >
+                <div class="project-info">
+                    <h2 style="padding: 0.5em;">About the App</h2> <!-- Reduced padding here -->
+                    <ul>
+                        <li>Collaborated with a university group to develop an Android app for effective well-being.</li>
+                        <li>Utilized Java programming language and a SQL database for data collection and storage.</li>
+                        <li>Features included user input for well-being metrics like mood, energy levels, and sleep quality.</li>
+                        <li>Provided personalized exercise suggestions and mindfulness techniques based on user data.</li>
+                        <li>Integrated concentration measurement using device sensors to assess focus levels during tasks.</li>
+                        <li>Displayed visually appealing charts and statistics to track progress and identify patterns.</li>
+                        <li>Ensured privacy and secure handling of personal data.</li>
+                        <li>Leveraged Git version control and GitHub for seamless collaboration within the university group.</li>
+                    </ul>
+                </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -2,76 +2,77 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JokeGenie</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    .project-info {
-      padding: 1em;
-      margin: 1em;
-      font-size: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokeGenie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .container1 {
+            max-width: 90%;
+            margin:  auto;
+        }
+        .header2 {
+            text-align: center;
+            padding: 5px ;
+            word-wrap: break-word;
+        }
 
-    .project-info ul {
-      list-style: none;
-      padding-left: 20px;
-    }
+        .project-info {
+            padding: 1em;
+            margin: 1em;
+            font-size: 20px;
+        }
 
-    .project-info li {
-      position: relative;
-      padding-left: 15px;
-      margin-bottom: 0.5em;
-    }
+        .project-info ul {
+            list-style: none;
+            padding-left: 20px;
+            padding: 0 1em;
+            text-align: left;
+        }
 
-    .project-info li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-    }
-  </style>
+        .project-info li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 0.5em;
+            font-size: 1.2rem;
+        }
+
+        .project-info li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
-  <header style="text-align: center; padding: 20px;">
-    <h1 style="font-size: 28px; padding: 1em;">JokeGenie</h1>
-  </header>
-
-  <main>
-    <section>
-      <div class="project-info">
-        <h2 style="padding: 1em;">About the  App</h2>
-        <ul>
-          <li> It utilizes React functional components and hooks for state management and handling side effects.
-        </li>
-          <li>The app makes use of the useState hook to manage the meme and allMemes state variables.
-        </li>
-          <li>It uses the useRef hook to create references for accessing and manipulating DOM elements.
-        </li>
-          <li>The app fetches meme data from an external API using the fetch function within the useEffect hook.
-        </li>
-          <li>The fetched meme data is stored in the allMemes state variable.
-        </li>
-          <li>The app dynamically adjusts the scale and position of the text within the meme image using the fitTextInImage function and the useEffect hook with a dependency on meme.randomImage.
-        </li>
-          <li>User input for the top and bottom text of the meme is captured using input elements and the handleChange function.
-        </li>
-          <li>The app generates a new meme image by randomly selecting an image URL from the allMemes array using the getMemeImage function.
-        </li>
-          <li>The selected meme image URL is stored in the randomImage property of the meme state variable.
-        </li>
-          <li>The app renders the meme image, along with the top and bottom text, using appropriate class names and the memeTopTextRef and memeBottomTextRef references.
-        </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    <div class="container1" >
+        <header class="header2" style=" min-height: 10vh;">
+            <h1 style="font-size: 28px; padding: 0.5em 1em;">JokeGenie</h1>
+        </header>
+        <main>
+            <div class="project-info">
+                <h2 style="padding: 0.5em;">About the App</h2>
+                <ul>
+                    <li>It utilizes React functional components and hooks for state management and handling side effects.</li>
+                    <li>The app makes use of the useState hook to manage the meme and allMemes state variables.</li>
+                    <li>It uses the useRef hook to create references for accessing and manipulating DOM elements.</li>
+                    <li>The app fetches meme data from an external API using the fetch function within the useEffect hook.</li>
+                    <li>The fetched meme data is stored in the allMemes state variable.</li>
+                    <li>The app dynamically adjusts the scale and position of the text within the meme image using the fitTextInImage function and the useEffect hook with a dependency on meme.randomImage.</li>
+                    <li>User input for the top and bottom text of the meme is captured using input elements and the handleChange function.</li>
+                    <li>The app generates a new meme image by randomly selecting an image URL from the allMemes array using the getMemeImage function.</li>
+                    <li>The selected meme image URL is stored in the randomImage property of the meme state variable.</li>
+                    <li>The app renders the meme image, along with the top and bottom text, using appropriate class names and the memeTopTextRef and memeBottomTextRef references.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-  
+    document.addEventListener("DOMContentLoaded", function() {
+  const astronotebookItem = document.getElementById('astronotebook-item');
+  const astronotebookDetails = document.getElementById('astronotebook-details');
+
+  astronotebookItem.addEventListener('click', function() {
+    astronotebookDetails.classList.toggle('show-details');
+  });
+});
+
     document.querySelector("#theme-btn").addEventListener("click", () => {
       document.body.classList.toggle("light-mode");
     });

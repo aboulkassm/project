@@ -236,7 +236,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-    width: 80%;
+    width: 95%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
@@ -244,19 +244,25 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-    width: 75%;
+    width: 87%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .react {
-    width: 60%;
+    width: 85%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .node {
-    width: 87%;
+    width: 85%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
     width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .java {
+    width: 85%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+    width: 80%;
 }
 
 .stat-title {
@@ -484,6 +490,33 @@ section {
     max-width: fit-content;
     display: block;
     margin: 0 auto;
+}
+
+#submit{
+    height: 2rem;
+    width: 10rem;
+    background-color: inherit;
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1.5px solid var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin:  10px auto;
+    
+}
+#submit:hover{
+    background-color: var(--color-secondary);
+    transition: all 0.4s ease-out;
+
+}
+.submit-text{
+    padding: 0 2rem;
+    font-size: large;
+    
 }
 
 .main-btn {
@@ -845,5 +878,6 @@ section {
     text-align: center;
     padding-top: 3rem;
 }
+
 }
 /*# sourceMappingURL=styles.css.map */

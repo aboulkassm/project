@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>document.addEventListener("DOMContentLoaded", function() {
+    // Get the saved theme from localStorage.
+    const savedTheme = localStorage.getItem("theme");
+  
+    // Apply the saved theme (if any).
+    if (savedTheme) {
+      document.body.classList.add(savedTheme);
+    }
+  });</script>
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
         .container1 {
             max-width: 90%;

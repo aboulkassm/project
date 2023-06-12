@@ -55,6 +55,44 @@
             position: absolute;
             left: 0;
         }
+        .navigate {
+        text-align: center;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .navigate-img {
+        max-width: 100%;
+        max-height: 400px;
+        height: auto;
+        width: auto;
+        border-radius: 8px;
+        transition: transform 0.2s;
+    }
+
+    .navigate-img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    .source-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+    .source-link {
+       align-content: center;
+        text-decoration: none;
+        padding-bottom: 50px;
+    }
+
+    .source-link:hover {
+        text-decoration: underline;
+    }
     </style>
 </head>
 
@@ -79,6 +117,14 @@
                     <li>The app renders the meme image, along with the top and bottom text, using appropriate class names and the memeTopTextRef and memeBottomTextRef references.</li>
                 </ul>
             </div>
+            <div class="navigate">
+                <h2 style="padding: 1em;">Explore the App</h2>
+                <img src="img\jokeapp.png" alt="JokeGenie logo" class="navigate-img" onclick="location.href='https://fancy-lamington-1e8fa2.netlify.app/';">
+              </div>
+              <div class="source-code">
+                <h2 style="padding: 0.5em;">View the Source Code</h2>
+                <p><a href="https://github.com/aboulkassm/jokegenie" class="source-link">Click here to view the JokeGenie source code on GitHub</a></p>
+              </div>
         </main>
     </div>
     

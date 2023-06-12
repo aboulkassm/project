@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>document.addEventListener("DOMContentLoaded", function() {
-    // Get the saved theme from localStorage.
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
     const savedTheme = localStorage.getItem("theme");
-  
-    // Apply the saved theme (if any).
     if (savedTheme) {
       document.body.classList.add(savedTheme);
     }
-  });</script>
+  });
+</script>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstroNotebook</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-      
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstronoteApp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .container1 {
+      max-width: 90%;
+      margin: auto;
+    }
 
-        .container1 {
-            max-width: 90%;
-            margin:  auto;
-        }
-        .header2 {
-            text-align: center;
-            padding: 5px ;
-            word-wrap: break-word;
-            
-          
-        }
+    .header2 {
+      text-align: center;
+      padding: 5px ;
+      word-wrap: break-word;
+    }
 
-        .project-info {
-            padding: 1em;
-            margin: 1em;
-            font-size: 20px;
-        }
+    .project-info {
+      padding: 1em;
+      margin: 1em;
+      font-size: 20px;
+    }
 
-        .project-info ul {
-            list-style: none;
-            padding-left: 20px;
-            padding: 0 1em;
-            text-align: left;
-        }
+    .project-info ul {
+      list-style: none;
+      padding-left: 20px;
+      padding: 0 1em;
+      text-align: left;
+    }
 
-        .project-info li {
-            position: relative;
-            padding-left: 15px;
-            margin-bottom: 0.5em;
-            font-size: 1.2rem;
-        }
+    .project-info li {
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 0.5em;
+      font-size: 1.2rem;
+    }
 
-        .project-info li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-        }
-    </style>
+    .project-info li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+    }
+
+    .navigate {
+        text-align: center;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .navigate-img {
+        max-width: 100%;
+        max-height: 400px;
+        height: auto;
+        width: auto;
+        border-radius: 8px;
+        transition: transform 0.2s;
+    }
+
+    .navigate-img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .source-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+    .source-link {
+       align-content: center;
+        text-decoration: none;
+        padding-bottom: 50px;
+    }
+
+    .source-link:hover {
+        text-decoration: underline;
+    }
+  </style>
 </head>
 
-<body >
-    <div class="container1" >
-        <header class="header2"  style=" min-height: 10vh;">
-            <h1 style="font-size: 28px; padding: 0.5em 1em;">AstroNotebook</h1>
-        </header>
-        <main>
-            <div class="project-info">
-                <h2 style="padding: 0.5em;">About the App</h2>
-                <ul>
-                    <li>AstroNotebook is an innovative web application that allows users to create, save, and delete notes in a visually appealing and interactive environment.</li>
-                    <li>Developed using HTML, CSS, and JavaScript, AstronoteApp offers a seamless note-taking experience with CSS animations and a dynamic live background.</li>
-                    <li>Users can easily create new notes, add content, and apply various formatting options to customize their notes according to their preferences.</li>
-                    <li>The app leverages CSS animations to provide delightful transitions and visual feedback when creating, editing, or deleting notes, enhancing the user experience.</li>
-                    <li>With the live background feature, AstronoteApp offers a unique touch by dynamically changing the background, displaying captivating images or animations related to the astral theme.</li>
-                </ul>
-            </div>
-        </main>
-    </div>
-    <script src="script.js"></script>
+<body>
+  <div class="container1">
+    <header class="header2" style="min-height: 10vh;">
+      <h1 style="font-size: 28px; padding: 0.5em 1em;">AstroNotebook</h1>
+    </header>
+    <main>
+      <div class="project-info">
+        <h2 style="padding: 0.5em;">About the App</h2>
+        <ul>
+          <li>AstroNotebook is an innovative web application that allows users to create, save, and delete notes in a visually appealing and interactive environment.</li>
+          <li>Developed using HTML, CSS, and JavaScript, AstronoteApp offers a seamless note-taking experience with CSS animations and a dynamic live background.</li>
+          <li>Users can easily create new notes, add content, and apply various formatting options to customize their notes according to their preferences.</li>
+          <li>The app leverages CSS animations to provide delightful transitions and visual feedback when creating, editing, or deleting notes, enhancing the user experience.</li>
+          <li>With the live background feature, AstronoteApp offers a unique touch by dynamically changing the background, displaying captivating images or animations related to the astral theme.</li>
+        </ul>
+      </div>
+      <div class="navigate">
+        <h2 style="padding: 1em;">Explore the App</h2>
+        <a href="https://aboulkassm-notebook.000webhostapp.com/index.html">
+          <img src="img\noteapp.png" alt="Navigate to the app" class="navigate-img">
+        </a>
+      </div>
+      <div class="source-code">
+        <h2 style="padding: 0.5em;">View the Source Code</h2>
+        <p><a href="https://github.com/aboulkassm/astronotebook" class="source-link">Click here to view the Astronotebook source code on GitHub</a></p>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
